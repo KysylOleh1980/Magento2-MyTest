@@ -1,0 +1,4 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for = "Traning\TestOM\Model\ManagerInterface"  type =  "Traning4\TestOM4\Model\ManagerCustom"
+    />
+</config>
