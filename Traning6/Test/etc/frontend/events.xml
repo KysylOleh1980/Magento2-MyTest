@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="my_event_before">
+        <observer name="Traning6_Test_before" instance="Traning6\Test\Observer\MyObserverBefore" />
+    </event>
+    <event name="my_event_after">
+        <observer name="Traning6_Test_after" instance="Traning6\Test\Observer\MyObserverAfter" />
+    </event>
+    <event name =  "controller_action_predispatch" >
+        <observer name = "Traning6_Test_common" instance="Traning6\Test\Observer\RedirectToLogin" />
+    </event>
+</config>
