@@ -1,0 +1,11 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name = "Magento\Framework\UrlInterface">
+        <plugin name = "Traning5_TestOM5" type =  "Traning5\TestOM5\Plugin\Model\Url"/>
+    </type>
+    <type name = "Magento\Framework\View\Element\Template">
+       <plugin name = "Traning5_TestOM5" type =  "Traning5\TestOM5\Plugin\Block\Template" disabled="false"/>
+    </type>
+    <type name = "Magento\Catalog\Controller\Product\View">
+       <plugin name = "Traning5_TestOM5" type = "Traning5\TestOM5\Plugin\Controller\Product\View" disabled="true"/>
+    </type>
+</config>
