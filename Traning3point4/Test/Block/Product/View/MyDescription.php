@@ -8,6 +8,8 @@ class MyDescription
 {
     public function beforeToHtml(Description $subject)
     {
-        $subject->getProduct()->setDescription('Test description');
+        if ($subject->getNameInLayout() == 'product.info.sku') {
+            $subject->setTemplate('Traning3point4_Test::test.phtml');
+        }
     }
 }
