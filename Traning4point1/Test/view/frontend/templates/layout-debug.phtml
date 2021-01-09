@@ -1,0 +1,28 @@
+
+
+<?php
+
+
+    $xml="<?xml version='1.0'?> 
+<document>
+ <title>title</title>
+ <from>from</from>
+ <to>to</to>
+ <body>
+  body
+ </body>
+</document>";
+    $obj = simplexml_load_string($xml);
+
+    $result = json_encode($obj, JSON_PRETTY_PRINT);
+    ?>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Traning4point1_Test/js/layout-debug": {
+                "xml": <?= $result ?>
+            }
+        }
+    }
+</script>
