@@ -1,0 +1,20 @@
+<div data-bind="scope: 'myUi1' ">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "myUi1": {
+                        "component": "Traning4point3_Test/js/UIcomponent1",
+                        "config": {
+                            "template":"Traning4point3_Test/UItemplate1"
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
