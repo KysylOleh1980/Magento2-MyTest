@@ -11,15 +11,29 @@ class FeedbackList extends Template
     private $collection;
     private $timezone;
 
+    private $_feedbackResource;
+
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
         \Training5point1\Test\Model\ResourceModel\Feedback\CollectionFactory $collectionFactory,
+        \Training5point1\Test\Model\ResourceModel\FeedbackResource $feedbackResource,
         \Magento\Framework\Stdlib\DateTime\Timezone $timezone,
         array $data = []
     ) {
         parent::__construct($context, $data);
         $this->collectionFactory = $collectionFactory;
+        $this->_feedbackResource = $feedbackResource;
         $this->timezone = $timezone;
+    }
+
+    public function getAllFeedbackNumber()
+    {
+        return $this->_feedbackResource->getAllFeedbackNumber();
+    }
+
+    public function getActiveFeedbackNumber()
+    {
+        return $this->_feedbackResource->getActiveFeedbackNumber();
     }
 
     public function getFeedbackCollection()
