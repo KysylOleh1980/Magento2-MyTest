@@ -1,0 +1,9 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for = "Training5point1\Test\Api\Data\FeedbackInterface"  type =  "Training5point1\Test\Model\Feedback"
+    />
+    <preference for="Training5point1\Test\Api\Data\FeedbackSearchResultsInterface"
+                type="Training5point1\Test\Model\FeedbackSearchResults" />
+
+    <preference for="Training5point1\Test\Api\Data\FeedbackRepositoryInterface"
+                type="Training5point1\Test\Model\FeedbackRepository" />
+</config>

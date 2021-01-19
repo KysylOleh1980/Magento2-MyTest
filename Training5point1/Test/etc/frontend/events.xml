@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="training_feedback_collection_load_after">
+        <observer name="Training5point1_Test_getCollection" instance="Training5point1\Test\Observer\TestCollectObserver" disabled="false"/>
+    </event>
+
+    <event name="training_feedback_load_after">
+        <observer name="Training5point1_Test_getModel" instance="Training5point1\Test\Observer\TestModelObserver" disabled="false"/>
+    </event>
+
+</config>
